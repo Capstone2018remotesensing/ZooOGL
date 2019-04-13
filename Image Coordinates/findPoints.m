@@ -1,6 +1,9 @@
 function [files,points] = findPoints(source,destination,extension,file)
-%The function allows you to click points in all the images in a folder and
-%save them to a file. The function arguments are:
+% *************************************************************************
+% Written by Hani Mohammed and edited by Kristy Guan.
+%
+% The function allows you to click points in all the images in a folder and
+% save them to a file. The function arguments are:
 %   source: The path to the folder of gray scale images.
 %   extension: file extension e.g. 'tif'
 %   numberOfPoints: the number of points you want to select in each image.
@@ -11,6 +14,7 @@ function [files,points] = findPoints(source,destination,extension,file)
 %   be saved to a file. If you set the number of points to be 1, then you
 %   will be allowed to click for a point at an image, then after you select
 %   the point a new image appears.
+% *************************************************************************
 
 path=strcat(source,'\*.',extension);
 files=dir(path);
